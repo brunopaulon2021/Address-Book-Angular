@@ -1,0 +1,7 @@
+
+<ul>
+  <li *ngFor="let contact of contacts">
+    <span>{{ contact.name }}</span>
+    <button (click)="deleteContact(contact.id)">Excluir</button>
+  </li>
+</ul>

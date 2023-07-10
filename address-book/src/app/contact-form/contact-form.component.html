@@ -1,0 +1,8 @@
+
+<form (ngSubmit)="saveContact()">
+  <input type="text" [(ngModel)]="contact.name" placeholder="Nome" required>
+  <input type="text" [(ngModel)]="contact.phoneNumber" placeholder="Telefone" required>
+  <input type="email" [(ngModel)]="contact.email" placeholder="E-mail" required>
+  <button type="submit">Salvar</button>
+  <button type="button" (click)="clearForm()">Limpar</button>
+</form>
