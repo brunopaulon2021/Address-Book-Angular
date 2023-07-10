@@ -1,0 +1,107 @@
+$primary-100: #3F51B5;
+$primary-200: #757de8;
+$primary-300: #dedeff;
+$accent-100: #FF4081;
+$accent-200: #ffe4ff;
+$text-100: #212121;
+$text-200: #484848;
+$bg-100: #F5F5F5;
+$bg-200: #ebebeb;
+$bg-300: #c2c2c2;
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: $text-100;
+}
+
+button {
+  background-color: $primary-100;
+  color: $accent-100;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: $primary-200;
+}
+
+button:focus {
+  outline: none;
+}
+
+body {
+  background-color: $bg-100;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $bg-200;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+p:first-of-type {
+  margin-top: 0;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: $primary-100;
+  color: $accent-100;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: $primary-200;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="tel"]::placeholder,
+.form-group input[type="email"]::placeholder {
+  color: $text-200;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="email"]:focus {
+  outline: none;
+}
+
+.error-message {
+  color: red;
+}
